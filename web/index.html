@@ -4,23 +4,94 @@
 <head>
   <meta charset="utf-8">
   <title>Thumbs up or down</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.css"> 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </head>
 
 <body>
-  <h1>Rating Posts</h1>
-  <form id="form">
-    <input type="text"
-           placeholder="New post..."
-           id="post-input">
-  </form>
-  <div id="posts"></div>
+  <nav>
+      <div class="ui large top menu">
+      <div class="ui container">
+        <a href="index.html" class="active item">Home</a>
+        <a href="#" class="item">Clases</a>
+        <a href="#" class="item">About</a>
+        <a href="#" class="item">Contact</a>
+        <div class="right menu">
+          <div class="item">
+            <a href="login.html" class="ui button">Log in</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="ui card">
+    <div class="content">
+      <a class="header">Rating Compiladores</a>
+      <div class="meta">
+        <span class="date">Agosto-Diciembre 2018</span>
+      </div>
+    </div>
+    <div class="image">
+      <img src="https://rotativo.com.mx/assets//2018/08/planificar-reutilizar-y-comparar-importantes-para-el-regreso-a-clases-696x392.jpg">
+    </div>
+    <div class="content">
+      <span class="right floated">
+        <i class="comment icon"></i>
+        3 comentarios
+      </span>
+      <i class="heart outline like icon"></i>
+        10 likes
+    </div>
+
+    <div class="extra content">
+
+      <div class="ui large transparent left icon input">
+          <form class="ui form" id="form">
+              <div class="field">
+                <input type="text"
+                      placeholder="New comment..."
+                      id="post-input">
+              </div>    
+          </form>
+      </div>
+
+      <div id="posts"></div>
+
+    </div>
+    
+  </div>
+  
+  
+  <style>
+    .comments{
+      margin: 10px;
+      background-color: #0000000f;
+      border-radius: 5px;
+      padding: 5px 10px;
+    }
+
+    .ui.card{
+      margin: 15px auto;
+      width: 50%;
+    }
+    
+    .ui.large.transparent.left.icon.input{
+      width: 100%;
+    }
+    .ui.form{
+      width: 100%;
+    }
+
+    
+  </style>
   <script>
     $(document).ready(function() {
       $.get('http://localhost:8080/posts', function(posts) {
         $list = $('#posts');
         for (var i = 0; i < posts.length; i++) {
-          $list.append('<p>' + posts[i].text + '</p>');
+          $list.append('<div class="comments"><p>' + posts[i].text + '</p></div>');
         }
       });
       $('#form').submit(function(event) {
