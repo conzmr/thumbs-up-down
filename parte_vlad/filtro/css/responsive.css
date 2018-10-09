@@ -1,0 +1,39 @@
+@media (max-width: 1200px) {
+	
+}
+@media (max-width: 992px) {
+
+}
+@media (max-width: 768px) {
+
+	
+	
+}
+@media all and (max-width:620px) {   /* mobile devices */
+
+	.container { width:100%!important }
+
+	.m-hide, .mobile-hide, .mobile-hidden, .hide-mobile, .hidden-mobile{display:none!important; height:0;}
+	
+.sidebar{width:50px}
+ .main-content{margin-left:50px;}
+.user-media{display:none}
+.brand{width:50px}
+.brand span{display:none}
+.brand a{padding:0}
+.sidebar-menu{margin-top:65px}
+.sidebar-menu .header{display: none}
+.sidebar-menu li{position: relative;}
+.sidebar-menu li span{display:none; margin:0; width: 150px; height:100%; background-color: #008888; position: absolute; z-index:9; top:1px; left:100%; padding:10px;}
+.sidebar-menu > li > ul{display:none; z-index: 999; min-width:200px; position: absolute; left:100%; top:1px;}
+.sidebar-menu li a i{display: inline-block; margin-left:2px;}
+.sidebar-menu li a span + i{display:none}
+.sidebar-menu > li:hover {background-color: #008888;}
+.sidebar-menu > li:hover .sub-menu{display: block}
+.sidebar-menu > li:hover span{display: block}
+	
+.header-content .navbar{margin-left:50px;}
+}
+
+
+
