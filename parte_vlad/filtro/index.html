@@ -1,5 +1,31 @@
 <!DOCTYPE HTML>
 <html lang="en">
+<style>
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+
+}
+
+
+</style>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -103,8 +129,29 @@ $(document).ready(function() {
 <main class="main-content">
  <div class="ui card">
     <div class="content">
+
+    <label for="materias">Selecciona tu materia</label>
+     
+    <<select id="materias" name="materias">
+      <option value="Compiladores">Compiladores</option>
+      <option value="Etica">Etica</option>
+      <option value="Sistemas">Sistemas inteligentes</option>
+      <option value="Aplicaciones">Aplicaciones web</option>
+      <option value="Arquitectura">Arquitectura</option>
+      <option value="Graficas">Graficas computacionales</option>
+
+
+
+      <option value="usa">USA</option>
+
+    </select>
+          <div class="meta">
+         
+
+
       <a class="header">Rating Compiladores</a>
-      <div class="meta">
+
+
         <span class="date">Agosto-Diciembre 2018</span>
       </div>
     </div>
