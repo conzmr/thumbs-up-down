@@ -58,6 +58,7 @@ type Token struct {
 
 var posts *mgo.Collection
 var courses *mgo.Collection
+var rates *mgo.Collection
 
 func FindCourses(w http.ResponseWriter, r *http.Request) {
   result := []Course{}
@@ -69,7 +70,20 @@ func FindCourses(w http.ResponseWriter, r *http.Request) {
 }
 
 func FindCourse(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintln(w, "not implemented yet !")
+ vars := mux.Vars(r)
+ id := vars["id"] // param id
+ var course Course
+ if !bson.IsObjectIdHex(id) {
+	responseError(w, "", http.StatusNotFound)
+	return
+ }
+ // Grab id
+ oid := bson.ObjectIdHex(id)
+ if err := courses.Find(bson.M{"_id": oid}).One(&course); err != nil {
+	 responseError(w, err.Error(), http.StatusInternalServerError)
+	 return
+ }
+ responseJSON(w, course)
 }
 
 func CreateCourse(w http.ResponseWriter, r *http.Request) {
@@ -108,8 +122,25 @@ func UpdateCourse(w http.ResponseWriter, r *http.Request) {
 	responseJSON(w, course)
 }
 
+//Return something
 func DeleteCourse(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintln(w, "not implemented yet !")
+	vars := mux.Vars(r)
+	id := vars["id"] // param id
+		// Verify id is ObjectId, otherwise bail
+	 if !bson.IsObjectIdHex(id) {
+		responseError(w, "", http.StatusNotFound)
+	  return
+	 }
+	 // Grab id
+	 oid := bson.ObjectIdHex(id)
+	 // Remove
+	 if err := courses.RemoveId(oid); err != nil {
+	  responseError(w, err.Error(), http.StatusInternalServerError)
+	  return
+	 }
+	// Write status
+	 w.WriteHeader(http.StatusOK)
+	 return
 }
 
 
@@ -133,7 +164,7 @@ func main() {
     r.HandleFunc("/courses", FindCourses).Methods("GET")
     r.HandleFunc("/courses", CreateCourse).Methods("POST")
     r.HandleFunc("/courses", UpdateCourse).Methods("PUT")
-    r.HandleFunc("/courses", DeleteCourse).Methods("DELETE")
+    r.HandleFunc("/courses/{id}", DeleteCourse).Methods("DELETE")
     r.HandleFunc("/courses/{id}", FindCourse).Methods("GET")
 
     r.HandleFunc("/posts", createPost).
