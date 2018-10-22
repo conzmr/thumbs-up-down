@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Thumbs up or down</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.css"> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </head>
@@ -13,13 +13,13 @@
   <nav>
       <div class="ui large top menu">
       <div class="ui container">
-        <a href="index.html" class="active item">Home</a>
-        <a href="#" class="item">Clases</a>
-        <a href="#" class="item">About</a>
-        <a href="#" class="item">Contact</a>
+        <a href="index.html" class="active item">Inicio</a>
+        <a href="#" class="item">Escuelas</a>
+        <a href="#" class="item">Cursos</a>
+        <a href="#" class="item">Profesores</a>
         <div class="right menu">
           <div class="item">
-            <a href="login.html" class="ui button">Log in</a>
+            <a href="login.html" class="ui button">Publicar</a>
           </div>
         </div>
       </div>
@@ -28,13 +28,14 @@
 
   <div class="ui card">
     <div class="content">
-      <a class="header">Rating Compiladores</a>
+      <a class="header">Diseño de Compiladores</a>
       <div class="meta">
+        <span class="date">Tecnológico de Monterrey Campus Guadalajara</span><br>
         <span class="date">Agosto-Diciembre 2018</span>
       </div>
     </div>
     <div class="image">
-      <img src="https://rotativo.com.mx/assets//2018/08/planificar-reutilizar-y-comparar-importantes-para-el-regreso-a-clases-696x392.jpg">
+      <img src="https://3.bp.blogspot.com/-RCCjkehx27s/UpRN35oRLLI/AAAAAAAAAoI/7zbIRw8Lrhc/s1600/mapa6a.jpg">
     </div>
     <div class="content">
       <span class="right floated">
@@ -53,17 +54,17 @@
                 <input type="text"
                       placeholder="New comment..."
                       id="post-input">
-              </div>    
+              </div>
           </form>
       </div>
 
       <div id="posts"></div>
 
     </div>
-    
+
   </div>
-  
-  
+
+
   <style>
     .comments{
       margin: 10px;
@@ -76,7 +77,7 @@
       margin: 15px auto;
       width: 50%;
     }
-    
+
     .ui.large.transparent.left.icon.input{
       width: 100%;
     }
@@ -84,7 +85,7 @@
       width: 100%;
     }
 
-    
+
   </style>
   <script>
     $(document).ready(function() {

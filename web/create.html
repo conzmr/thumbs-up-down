@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Nuevo</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    </head>
+<body>
+    <div class="form">
+        <div class="container">
+                    <h1>Crear nueva clase</h1>
+                </div>
+                <div class="ui form">
+                  <p>Para continuar, es necesario que te autentiques con tu cuenta de Google Classroom</p>
+                  <p>Sigue el siguiente link: <a></a> </p>
+                  <p>generarás una clave que tendrás que introducir aquí.</p>
+                    <div class="required field">
+                        <label>Nombre </label>
+                        <input id="mail" name="token" type="text" placeholder="ghsdayu876tyghas">
+                    </div>
+                    <div id="submint" class="ui submit button">Submit</div>
+                </div>
+    </div>
+
+
+    <style>
+        .container{
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+        .ui.form{
+            width: 50%;
+            padding: 20px;
+            margin: 0 auto;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function() {
+            $('#submint').click(function() {
+                var mail = $('#mail').val();
+                var pass = $('#pass').val();
+                alert(mail);
+            });
+        });
+    </script>
+
+</body>
+</html>
