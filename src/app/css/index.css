@@ -1,0 +1,18 @@
+.comments{
+  margin: 10px;
+  background-color: #0000000f;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.ui.card{
+  margin: 15px auto;
+  width: 50%;
+}
+
+.ui.large.transparent.left.icon.input{
+  width: 100%;
+}
+.ui.form{
+  width: 100%;
+}

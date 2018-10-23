@@ -1,0 +1,338 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="description" content="Write something" />  
+<meta name="project" content="web">
+<title>Project</title>
+<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+
+<script src="js/jquery-2.0.0.min.js" type="text/javascript"></script>
+<script src="js/script.js" type="text/javascript"></script>
+
+<!-- bootstrap -->
+<link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+<script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+
+<!-- font awesome -->
+<link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+
+<!-- custom style -->
+<link href="css/mystyle.css" rel="stylesheet" type="text/css"/>
+
+<link href="css/responsive.css" rel="stylesheet" media="only screen and (max-width: 1200px)" />
+
+<script type="text/javascript">
+/// some script
+
+// jquery ready start
+$(document).ready(function() {
+	// jQuery code
+	//...
+	
+}); 
+// jquery end
+</script>
+
+</head>
+<body>
+
+<!-- main wrap start -->
+<div class="main-wrap">
+<div class="container">
+
+<section class="wrap-content">
+<header class="clearfix header-content">
+<div class="brand">
+	<span>ADMIN TITLE</span> <a class="open-left" href="#"><i class="fa fa-bars"></i>  </a>
+</div>
+<nav class="navbar">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+<i class="fa fa-bars"></i> MENU
+</button>
+    <!--  <a class="navbar-brand" href="#">Home</a> -->
+</div>
+<div class="collapse navbar-collapse" id="navbar-collapse-1">
+<ul class="nav navbar-nav  pull-right">
+	<li> <a href="index.html"><i class="fa fa-home"></i> Main</a>  </li>
+	<li> <a href="#"><i class="fa fa-gear"></i> Settings</a>  </li>
+	<li> <a href="login.html"> <i class="fa fa-power-off"></i> Log out</a> </li>
+</ul>
+</div><!-- // collapse -->
+</nav><!-- // header-right -->
+</header>
+<aside class="sidebar">
+ <div class="user-media">
+	<div class="pull-left img-holder"><img src="photos/man1.jpg" class="img-circle"></div>
+	<div class="pull-left info">
+		<p>Welcome, Administrator</p>
+		<a href=""><i class="fa fa-circle text-danger"></i> Online</a>
+	</div>
+ </div>
+ 
+ <ul class="sidebar-menu">
+ <li class="header">MAIN MENU</li>
+ 	<li><a href="table.html"><i class="fa fa-table"></i> <span>Table info</span></a></li>
+ 	<li><a href="items.html"><i class="fa fa-image"></i> <span>Items list</span></a></li>
+ 	<li><a href="table.html"><i class="fa fa-table"></i><span>Table info</span></a></li>
+ 	<li class="active"><a href="forms1.html"><i class="fa fa-pencil"></i> <span>Basic forms</span></a></li>
+ 	<li><a href="forms2.html"><i class="fa fa-pencil"></i> <span>Advanced forms</span></a></li>
+ 	<li><a href="widgets.html"><i class="fa fa-leaf"></i> <span>Widgets</span></a></li>
+ 	<li><a href="#"> <i class="fa fa-bars"></i> <span>Dropdown list</span> <i class="fa fa-angle-left"></i> </a>
+ 		<ul class="sub-menu">
+		 	<li><a href="#">Demo link 1</a></li>
+		 	<li><a href="#">Demo link 2</a></li>
+		 	<li><a href="#">Demo link 3</a></li>	
+		</ul>
+ 	</li>
+ 	<li><a href="#"> <i class="fa fa-bars"></i> <span>Another dropdown</span> <i class="fa fa-angle-left"></i> </a>
+ 		<ul class="sub-menu">
+		 	<li><a href="#">Demo link 4</a></li>
+		 	<li><a href="#">Demo link 5</a></li>
+		 	<li><a href="#">Demo link 6</a></li>	
+		</ul>
+ 	</li>
+ 	<li><a href="1starter.html"><i class="fa fa-file"></i> <span> Starter page</span></a></li>
+ </ul>
+ 
+</aside>
+
+<main class="main-content">
+ 
+<div class="page-header"><h1>Dashboard heading</h1></div>
+
+<!-- ==================== content ==================== -->
+
+<div class="row-sm">
+	<div class="col-sm-6">
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h3 class="panel-title">Simple bootstrap form</h3>
+	</div>
+	<div class="panel-body">
+
+<form action="">
+
+<p class="alert alert-success" role="alert"> Success msg</p>
+
+ <div class="form-group">
+	<label>Your name</label>
+	<input class='form-control' size='4' type='text'>
+</div>
+<div class='form-group'>
+	<label>From:</label>
+	<input class='form-control' size='4' type='text'>
+</div>
+<div class='form-group'>
+	<label>Your Email:</label>
+	<input class='form-control' size='4' type='text'>
+</div>
+<div class="form-group">
+<label>We listen for you</label>
+<textarea class="form-control" type="textarea" id="message" placeholder="Message" maxlength="500" rows="4"></textarea>
+<span class="help-block">We welcome your feedback</span>                    
+</div>
+<hr>        
+<button type="button" id="submit" name="submit" class="btn btn-primary">Submit Form</button>
+
+</form>	
+
+	</div>
+</div><!-- panel // -->
+	</div><!-- //col -->
+	<div class="col-sm-6">
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h3 class="panel-title">Form with warnings</h3>
+	</div>
+	<div class="panel-body">
+
+<form class="form-horizontal">
+<p class="alert alert-danger" role="alert"> Error msg</p>
+
+        <div class="form-group has-error">
+            <label class="control-label col-sm-4">Name</label>
+			<div class="col-sm-8">			
+				<input type="text"  name="fullname" class="form-control"  />
+			</div>
+        </div><!-- form-group // -->
+        
+		<div class="form-group has-success">
+            <label class="control-label col-sm-4">Password</label>     
+			<div class="col-sm-8">
+            <input type="password" id="fullname" name="fullname" class="form-control"  />
+			</div>
+        </div><!-- form-group // -->
+        
+		<div class="form-group">
+            <div class="col-sm-offset-4 col-sm-8">
+                <label>Your favorite weather?</label>
+                <div class="radio">
+                    <label><input type="radio" name="weather" value="hot" checked="checked"/> hot</label>
+                    </div>
+                <div class="radio">
+                    <label><input type="radio" name="weather" value="cold"/> cold</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="weather" value="rainy"/> rainy</label>
+                </div>
+            </div>
+        </div><!-- form-group // -->
+
+		<div class="form-group">
+			<label class="col-sm-4 control-label">Date: </label>
+			<div class="col-sm-6"> 
+			<input type="date" disabled class="form-control" value="12.15.2016" name="date">
+			</div>
+		</div> <!-- form-group // -->
+		<div class="form-group">
+			<label for="tech" class="col-sm-4 control-label">Button checkbox </label>
+			<div class="col-sm-8">
+			<!-- select checboxes -->
+			<div class="btn-group" data-toggle="buttons">
+			  <label class="btn-checkbox btn btn-default">
+				<input type="checkbox" checked> Select 1
+			  </label>
+			  <label class="btn-checkbox btn btn-default">
+				<input type="checkbox"> Select 2
+			  </label>
+			  <label class="btn-checkbox btn btn-default">
+				<input type="checkbox"> Select 3
+			  </label>
+			</div>
+			<!-- select checboxes // -->
+			</div>
+		</div> <!-- form-group // -->
+		<div class="form-group">
+			<label for="tech" class="col-sm-4 control-label">Button radio </label>
+			<div class="col-sm-8">
+			<!-- select checboxes -->
+			<div class="btn-group" data-toggle="buttons">
+			  <label class="btn-radio btn btn-warning">
+				<input type="radio" checked> Select 1
+			  </label>
+			  <label class="btn-radio btn btn-warning">
+				<input type="radio"> Select 2
+			  </label>
+			  <label class="btn-radio btn btn-warning">
+				<input type="radio"> Select 3
+			  </label>
+			</div>
+			<!-- select checboxes // -->
+			</div>
+		</div> <!-- form-group // -->
+        <div class="form-group">
+			<label class="control-label col-sm-4">Number</label>     
+			<div class="col-sm-3">
+            <input type="number" max="5" min="1" class="form-control"  />
+			</div>
+        </div><!-- form-group // -->
+		
+        <div class="form-group">
+            <div class="col-sm-offset-4 col-sm-10">
+                <!--<input type="submit" class="btn btn-primary" value="Submit" />-->
+                <button type="reset" class="btn btn-default">Reset</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
+
+            </div>
+        </div>
+
+
+    </form>
+	</div>
+</div><!-- panel // -->
+	</div><!-- //col -->
+</div><!-- //row -->
+
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h3 class="panel-title">Horizontal Form fill</h3>
+	</div>
+	<div class="panel-body">
+<form action="#" class="form-horizontal" role="form">
+
+<div class="form-group">
+	<label for="name" class="col-sm-3 control-label">Radio choose</label>
+	<div class="col-sm-9">
+	<label class="radio-inline">
+	  <input type="radio" name="choose" checked value="option1"> Option one
+	</label>
+	<label class="radio-inline">
+	  <input type="radio" name="choose" value="option2"> Option two
+	</label>
+	</div>
+</div> <!-- form-group // -->
+
+   <div class="form-group">
+    <label for="name" class="col-sm-3 control-label">Subject</label>
+    <div class="col-sm-7">
+      <input type="text" class="form-control" name="name" id="name" placeholder="Write here subject">
+	  <span class="help-block small">Some help text here</span>
+    </div>
+  </div> <!-- form-group // -->
+  <div class="form-group">
+    <label for="about" class="col-sm-3 control-label">Description</label>
+    <div class="col-sm-7">
+      <textarea class="form-control"></textarea>
+    </div>
+  </div> <!-- form-group // -->
+  <div class="form-group">
+    <label for="qty" class="col-sm-3 control-label">Price</label>
+    <div class="col-sm-3">
+   <div class="input-group">
+   <input type="text" class="form-control" name="summa">
+   <span class="input-group-addon">usd</span>
+    </div><!-- input-group // -->
+	</div> 
+  </div><!-- form-group // -->
+  <div class="form-group">
+    <label for="name" class="col-sm-3 control-label">Upload</label>
+    <div class="col-sm-3">
+      <label class="control-label small  text-muted" for="file_img">image:</label> <input type="file" name="file_img">
+    </div>
+	<div class="col-sm-3">
+      <label class="control-label small  text-muted" for="file_img">archive:</label>  <input type="file" name="file_archive">
+    </div>
+  </div> <!-- form-group // -->
+  <div class="form-group">
+    <label for="tech" class="col-sm-3 control-label">Choose</label>
+    <div class="col-sm-3">
+   <select class="form-control">
+	<option value="">Select</option>
+	<option value="opt1">Some name 1</option>
+	<option value="opt2">Some name 1</option>
+   </select>
+    </div>
+  </div> <!-- form-group // -->
+  <div class="form-group">
+    <label for="tech" class="col-sm-3 control-label">Checkbox</label>
+    <div class="col-sm-3">
+		<label class="checkbox-inline"> <input type="checkbox"> I accept terms</label>
+    </div>
+  </div> <!-- form-group // -->
+  <hr>
+  <div class="form-group">
+    <div class="col-sm-offset-3 col-sm-9">
+      <button type="submit" class="btn btn-info">Send form</button>
+    </div>
+  </div> <!-- form-group // -->
+</form>
+
+	</div><!-- panel-body // -->
+</div><!-- panel // -->
+<!-- ==================== content // ==================== -->
+
+</main><!-- main-content // -->
+ 
+</div>
+</section><!-- wrap-content //  -->
+</div><!-- container // -->
+
+</div>
+<!-- main wrap finish -->
+<a href="#top" class="topHome"><i class="fa fa-chevron-up fa-2x"></i></a>
+</body>
+</html>
