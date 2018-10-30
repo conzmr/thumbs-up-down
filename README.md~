@@ -16,8 +16,17 @@ This is a project based on Go, with the purpose of create a web app tool that he
       
 #### How to run
 
-   * $ docker-compose build
-   * $ docker-compose up
+   ``` $ docker-compose build ```
+
+   ``` $ docker-compose up ```
+
+   * Open localhost:8081/
+   
+#### Credits
+
+   * Andres Torres Becerra 
+   * Francisco Castellanos
+   * Vladimir Rodriguez Bahena
     
 
 
