@@ -2,111 +2,30 @@
 
 Web development laboratory project - Group 1
 
-This is a project based on Go, with the purpose of developing a web app that allow users to give a feedback about a topic and a professor, this to create a rating and give enough information to 
+This is a project based on Go, with the purpose of create a web app tool that helps a school to manage the feedback of the professor and study plan, this to give a friendly interface to the users and concentrate all the tools on a single platform. To do this, we use a dinamic interface that get a comment and a reaction from the user to post it on the page, this to share the rating that get a topic with a professor.
+
 
 Agenda: 
 
-* OS Architecture
-  * Introduction 
-    * What is an Operating Systems
-      * https://drive.google.com/open?id=0B7iKrGdVkDhIOElQYnhRU09TWXc
-    * Operating System Structure
-      * https://drive.google.com/file/d/0B7iKrGdVkDhIZVB4RkY4MHdYd2M/view?usp=sharing 
-  * Process Management
-     * Processes
-       * https://drive.google.com/file/d/0B7iKrGdVkDhIR2VORXdGLVZGVVU/view?usp=sharing  
-     * Threads
-       * https://drive.google.com/file/d/0B7iKrGdVkDhIN1A2Y1AwbkpIeHM/view?usp=sharing 
-     * CPU Scheduling
-       * https://drive.google.com/file/d/0B7iKrGdVkDhIZkRWVHZ3M2pYOUU/view
-     * Process Synchronization
-       * https://drive.google.com/open?id=0B7iKrGdVkDhIbDg1VHY4aUNkZzg
-     * Deadlocks
-  * Memory 
-     * Main Memory
-      * https://drive.google.com/file/d/0B7iKrGdVkDhIb0RDcGM0S1VBTTg/view?usp=sharing
-     * Virtual Memory
-  * Storage Management
-     * File System Interface
-     * File System Implementation
-     * Mass Storage Structure
-     * I/O Systems 
+* Requirements
 
-* Linux (Kernel Space)
-  * Elements on the Kernel 
-    * Processes, Task Switching and Scheduling
-    * Address Spaces and Privilege Levels
-    * Introduction Virtual and Physical Address Spaces
-       * Page Tables
-       * Allocation of Physical Memory
-       * Slab Cache
-  * Linux Device Drivers
-    * https://drive.google.com/file/d/0B7iKrGdVkDhIdjhiZ3RuYnVQbk0/view?usp=sharing
-    * Kind of Drivers
-      * Network Drivers 
-      * Block Drivers
-      * Character Drivers
-    * IOCTLs
-      * Driver entry points for IOCTLs
-      * Locked and Lockless IOCTLs
-      * Defining IOCTLs
-    * Unified Device Model and sysfs
-    * Transfer between user and kernel space
-    * Timing
-      * Jiffies
-      * Inserting delays
-      * Dynamic Timers
-      * Timer Implementation
-      * High Resolution Timers
-  * Memory management and allocation
-    * Kmalloc
-    * Vmalloc
-    * Bootmem
-  * Power Management
-    * ACPI and APM
-  * Debugging techniques
-    *	Kernel Debuggers
-  * Linux boot process
-    * The Linux x86 boot protocol
-    * How is the kernel built?
-    * Loading the kernel – bzImage boot protocol
-    * The start_kernel() function
+  * Docker (v18.00 +)
+    * Install for Windows
+      * https://docs.docker.com/docker-for-windows/install/ 
+    * Install for MACOS
+      * https://docs.docker.com/docker-for-mac/install/
+    * Install for Linux
+      * https://docs.docker.com/install/linux/docker-ce/ubuntu/
 
-
-Oftopic Trainings ( in case you need them ) 
-  * Git training
-    * https://drive.google.com/file/d/0B7iKrGdVkDhINERiQnppOU5IVVk/view?usp=sharing
-  * Bash Trainings: 
-    * https://drive.google.com/file/d/0B7iKrGdVkDhILU9QRWllWmNKM2M/view?usp=sharing
-    * https://drive.google.com/file/d/0B7iKrGdVkDhIWGVhVzhtTlZjWGc/view?usp=sharing
-    * https://drive.google.com/file/d/0B7iKrGdVkDhIRkVPSlNPdkdSS2c/view?usp=sharing
-    * https://drive.google.com/file/d/0B7iKrGdVkDhIbkdKYWI1R19oMzQ/view?usp=sharing
+  * Go (v1.2 +)
+    * Install for Windows/MACOS/Linux
+      * https://golang.org/dl/ 
+      
+* How to run
+    * $ docker-compose build
+    * $ docker-compose up
     
-  * GCC for performance Trainings:
-    * https://drive.google.com/open?id=0B7iKrGdVkDhIUzZTVTduczJrQTg
 
-Pondaration: 
 
- * 35% First Term
-   * 15% Weekly Quizzes
-   * 5% Reading Summaries
-   * 15% Labs
 
- * 35% Second Term
-   * 15%  Weekly Quizzes
-   * 5% Reading Summaries
-   * 15% Labs
 
-* 30% Final Exam ( if student decides to do final project it is = 10% and final exam 20 % ) 
-
-Bibliography: 
-Mian Book : Operating System Concepts, Abraham Silberschatz, Peter B. Galvin
-
-Other good books : 
-* Understanding the Linux Kernel, 3rd Edition. Daniel P. Bovet and Marco Cesati. Copyright © 2005 O'Reilly Media, Inc.
-* Advanced Linux Programming. Mark Mitchell, Jeffrey Oldham and Alex Samuel. New Riders Publishing, 2001
-* Professional Linux Kernel Architecture, Wolfgang Mauerer
-
-Q/A Contact point: 
-
-* https://groups.google.com/forum/#!forum/oslecture-itesm-gdl
