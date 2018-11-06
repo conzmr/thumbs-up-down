@@ -28,9 +28,3 @@ This is a project based on Go, with the purpose of create a web app tool that he
    * Andres Torres Becerra 
    * Vladimir Rodriguez Bahena
    * Francisco Castellanos
-
-    
-
-
-
-
