@@ -1,6 +1,11 @@
-FROM nginx
+FROM node:8 as react-build
+WORKDIR /app
+COPY . ./
+RUN yarn
+RUN yarn build
 
-RUN adduser --disabled-password --gecos '' web
-USER web
-
-COPY . /usr/share/nginx/html
+FROM nginx:alpine
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+COPY --from=react-build /app/build /usr/share/nginx/html
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
